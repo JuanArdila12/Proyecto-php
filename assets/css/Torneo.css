@@ -1,0 +1,54 @@
+.inscripcion_torneo {
+    background-image: url(../img/login_torneo.jpg);
+}
+
+
+.card1 {
+    margin-top: 215px;
+    background-color:#14213D;
+    color: white;
+    border-radius: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+input {
+    background-color:   #E5E5E5  !important;
+    border-radius: 15px !important;
+    box-shadow: black;
+}
+
+
+::placeholder {
+    color: #14213D !important;
+}
+
+
+.form-group{
+    width: 80%;
+}
+
+
+.btn_andromeda {
+    color: black !important;
+    background-color: #FCA311 !important;
+    border-radius: 20px !important;
+    width: 250px;
+}
+
+
+.btn_andromeda:hover{
+    background-color: #DE8A02 !important;
+    color: #14213D;
+}
+
+
+.logo{
+    width: auto;
+    height: 160px;
+}
+
+.redirigir{
+    color: #FCA311;
+}
+

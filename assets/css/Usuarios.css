@@ -1,0 +1,80 @@
+.register{
+    background-image: url(../img/usuarios.jpeg);
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.crearTorneo{
+    background-image: url(../img/fondo.png);
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.login{
+    background-image: url(../img/login.jpg);
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.registro{
+    margin-top: 170px;
+    background-color:  #14213D;
+    color: white;
+    border-radius: 35px;
+}
+
+
+.form-group{
+    width: 80%;
+}
+
+
+.log{
+    margin-top: 215px;
+    background-color:#14213D;
+    color: white;
+    border-radius: 35px;
+}
+
+
+input{
+    background-color:   #E5E5E5  !important;
+    border-radius: 15px !important;¿
+}
+
+
+::placeholder{
+    color: #14213D !important;
+}
+
+
+.logo{
+    width: auto;
+    height: 160px;
+}
+
+
+.cont{
+    margin-left: 175px;
+}
+
+
+.btn-registro{
+    color: black !important;
+    background-color: #FCA311 !important;
+    border-radius: 20px !important;
+    width: 250px;
+}
+
+.btn-registro:hover{
+    background-color: #DE8A02 !important;
+    color: #14213D;
+}
+
+
+.redirigir{
+    color: #FCA311;
+}
