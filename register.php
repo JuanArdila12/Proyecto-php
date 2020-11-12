@@ -11,7 +11,7 @@
                 $contraseña = $_POST['contraseña'];
                 
         
-                $query = "INSERT INTO games_andromeda.usuarios(nombre, apellido, telefono, email, contraseña)
+                $query = "INSERT INTO torneos.usuarios(nombre, apellido, telefono, email, contraseña)
                 VALUES ('$nombre', '$apellido', '$telefono', '$email', '$contraseña')";
                 mysqli_query($conexion, $query);
                                             
@@ -19,7 +19,6 @@
 
                 }
                 
-        
 ?>
 
 <!DOCTYPE html>

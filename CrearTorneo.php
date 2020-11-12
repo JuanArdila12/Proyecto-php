@@ -1,5 +1,25 @@
+<?php
+
+    include("db.php");
 
 
+        if (isset($_POST['crearTorneo'])){
+                $nom = $_POST['nom'];
+                $juego = $_POST['juego'];
+                $fechaInicio = $_POST['fechaInicio'];
+                $fechaFinal = $_POST['fechaFinal'];
+                $Premios = $_POST['Premios'];
+                $nombreOrganizador = $_POST['nombreOrganizador'];
+                        
+                $query = "INSERT INTO torneos.torneos(nombre, juego, fecha_inicio, fecha_final, premios, nombreOrganizador)
+                VALUES ('$nom', '$juego', '$fechaInicio', '$fechaFinal', '$Premios', '$nombreOrganizador')";
+                mysqli_query($conexion, $query);
+                                            
+                header("location: dashboard.php");
+
+                }
+                        
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,23 +36,24 @@
         <div class="col col-md-4 cont ">
             <div class="card  registro">
                 <div class="card-body">
-                    <form action="#">
+                    <form action="CrearTorneo.php" method="POST">
                         <span class="text-center d-block mt-3">
                             <img src="assets/img/logo.png" class="logo">
                         </span>
                         <div class="form-group mx-auto">
-                            <input type="text" name="#" class="form-control mt-3" placeholder="Nombre del torneo" />
-                            <input type="text" name="#" class="form-control mt-3" placeholder="Juego" />
-                            <input type="date" name="#" class="form-control mt-3" placeholder="Fecha de inicio" />
-                            <input type="date" name="#" class="form-control mt-3" placeholder="Fecha de finalización" />
-                            <input type="text" name="#" class="form-control mt-3" placeholder="Premios" />
+                            <input type="text" name="nom" class="form-control mt-3" placeholder="Nombre del torneo" />
+                            <input type="text" name="juego" class="form-control mt-3" placeholder="Juego" />
+                            <input type="date" name="fechaInicio" class="form-control mt-3" placeholder="Fecha de inicio" />
+                            <input type="date" name="fechaFinal" class="form-control mt-3" placeholder="Fecha de finalización" />
+                            <input type="text" name="Premios" class="form-control mt-3" placeholder="Premios" />
+                            <input type="text" name="nombreOrganizador" class="form-control mt-3" placeholder="Ingrese nombre del organizador" />
                             <div class="text-center">
-                                <button type=submit class=" btn btn-registro font-weight-bold mt-5 ">
+                                <button type=submit name="crearTorneo" class=" btn btn-registro font-weight-bold mt-5 ">
                                     Crear
                                 </button>
                             </div>
                             <div class=" row">
-                                <a class="mx-auto redirigir mt-3" href="inscripcionTorneo.html">Inicio</a>
+                                <a class="mx-auto redirigir mt-3" href="dashboard.php">Inicio</a>
                             </div>
                         </div>
                     </form>

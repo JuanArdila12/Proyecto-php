@@ -4,8 +4,8 @@
 $conexion = mysqli_connect(
     'localhost',
     'root',
-    '',
-    'games_andromeda'
+    'minato09',
+    'torneos'
 );
 
 

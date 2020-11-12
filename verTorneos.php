@@ -1,3 +1,9 @@
+
+                         
+<?php
+include("db.php");
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -15,23 +21,7 @@
     <title>Usuario</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-sticky navbar-stuck">
-        <div class="container-fluid">
-          <a href="#" class="navbar-brand">
-            <img src="assets/img/logo.png" alt="" srcset="">
-          </a>
-    
-          <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-              <li class="navbar-item"><a href="verTorneos.html" class="nav-link">Ver torneos</a></li>
-              <li class="navbar-item"><a href="inscripcionTorneo.html" class="nav-link">Inscribirme a torneos</a></li>
-              <li class="navbar-item"><a href="CrearTorneo.html" class="nav-link">Crear torneo</a></li>
-              <li class="navbar-item"><a href="verMistorneos.html" class="nav-link">Ver mis torneos</a></li>
-              <li class="navbar-item"><a href="index.html" class="nav-link">Salir</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <?php include("header.php")?>
 
       <div class="container">
         <div class="table-responsive">
@@ -39,7 +29,6 @@
             <table class="table table-hover">
               <thead>
                 <tr>
-                  <th scope="col">#</th>
                   <th scope="col">Nombre torneo</th>
                   <th scope="col">Juego</th>
                   <th scope="col">Fecha inicio</th>
@@ -49,15 +38,23 @@
                 </tr>
               </thead>
               <tbody>
+              <?php 
+              $sql="SELECT * FROM torneos";
+              $resultado=mysqli_query($conexion,$sql);
+
+              while($mostrar=mysqli_fetch_array($resultado)){
+            ?>
                 <tr>
-                  <th scope="row">1</th>
-                  <td>La liga de los fiferos</td>
-                  <td>Fifita</td>
-                  <td>03/03/2000</td>
-                  <td>04/04/2000</td>
-                  <td>Unas felicitaciones</td>
-                  <td>Santiago</td>
+                  <td><?php echo $mostrar['nombre'] ?></td>
+                  <td><?php echo $mostrar['juego'] ?></td>
+                  <td><?php echo $mostrar['fecha_inicio'] ?></td>
+                  <td><?php echo $mostrar['fecha_final'] ?></td>
+                  <td><?php echo $mostrar['premios'] ?></td>
+                  <td><?php echo $mostrar['nombreOrganizador'] ?></td>
                 </tr>
+                <?php 
+              }
+            ?>
               </tbody>
             </table>
           </table>

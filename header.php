@@ -1,4 +1,4 @@
-                        <!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -13,18 +13,24 @@
     <title>Usuario</title>
   </head>
   <body>
-  <?php include("header.php")?>
-
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <img src="assets/img/Saly-10.png" alt="" class="img-fluid">
-          </div>
-          <div class="col" id="Bienvenida">
-            <h1 class="text-center text-pop-up-tl">Bienvenido a Andromeda Games</h1>
+    <nav class="navbar navbar-expand-lg navbar-sticky navbar-stuck">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">
+            <img src="assets/img/logo.png" alt="" srcset="">
+          </a>
+    
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="navbar-item"><a href="verTorneos.php" class="nav-link">Ver torneos</a></li>
+              <li class="navbar-item"><a href="CrearTorneo.php" class="nav-link">Crear torneo</a></li>
+              <li class="navbar-item"><a href="verMistorneos.php" class="nav-link">Ver mis torneos</a></li>
+              <li class="navbar-item"><a href="index.php" class="nav-link">Salir</a></li>
+            </ul>
           </div>
         </div>
-      </div>
+      </nav>
+
+
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
