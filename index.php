@@ -1,3 +1,5 @@
+<?php include('db.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,8 +25,8 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="navbar-item"><a href="#" class="nav-link">Home</a></li>
-          <li class="navbar-item"><a href="login.html" class="nav-link">Iniciar sesion</a></li>
-          <li class="navbar-item"><a href="register.html" class="nav-link">Registrarse</a></li>
+          <li class="navbar-item"><a href="login.php" class="nav-link">Iniciar sesion</a></li>
+          <li class="navbar-item"><a href="register.php" class="nav-link">Registrarse</a></li>
         </ul>
       </div>
     </div>
