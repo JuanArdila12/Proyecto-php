@@ -33,7 +33,7 @@
                                 Ingresar
                             </button>
                             <div class="row">
-                                <a class="mx-auto redirigir mt-3" href="index.html">Inicio</a>
+                                <a class="mx-auto redirigir mt-3" href="dashboard.html">Inicio</a>
                             </div>
                         </div>
                     </form>

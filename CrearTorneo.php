@@ -1,6 +1,8 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +32,7 @@
                                 </button>
                             </div>
                             <div class=" row">
-                                <a class="mx-auto redirigir mt-3" href="index.html">Inicio</a>
+                                <a class="mx-auto redirigir mt-3" href="inscripcionTorneo.html">Inicio</a>
                             </div>
                         </div>
                     </form>
